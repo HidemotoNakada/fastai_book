@@ -1,4 +1,9 @@
-# Colabの使い方
+---
+layout: page
+title: Colabの使い方
+permalink: /colab/
+---
+
 ### 無償利用できるGoogleのGPUノートブック
 
 This is a quick guide to starting Practical Deep Learning for Coders using Google Colab. 
