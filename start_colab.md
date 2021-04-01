@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Colabの使い方
-permalink: /colab/
+permalink: /start_colab/
 ---
 
 ### 無償利用できるGoogleのGPUノートブック
