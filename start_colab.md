@@ -69,13 +69,12 @@ NB: One section of chapter 2 uses Voila, which unfortunately is not supported by
 
 Before running anything, you need to tell Colab that you are interested in using a GPU. You can do this by clicking on the ‘Runtime’ tab and selecting ‘Change runtime type’. A pop-up window will open up with a drop-down menu.
 
-![02](images/colab/02.png)
+<img src="images/colab/02.png" width="80%">
 
 メニューからGPUを選択し、'Save'をクリックする。
 
 
-![03](images/colab/03.png)
-
+<img src="images/colab/03.png" width="30%">
 
 ### Notebook setup
 The first cell contains the code necessary to set up fastai and other libraries you'll need. It looks like this:
@@ -90,7 +89,8 @@ Click the "run" triangle on the left of that cell, or press Ctrl-Enter, to execu
 
 When you run the first cell, you may face a pop-up saying 'Warning: This notebook was not authored by Google'; you should click on 'Run Anyway' to get rid of the warning.
 
-![04](images/colab/04.png)
+
+<img src="images/colab/04.png" width="50%">
 
 
 ### Using Google Drive
@@ -107,7 +107,7 @@ Your Google Drive will be available in a variable called gdrive, which will poin
 
 After opening a notebook from Github, you will need to save your work to Google Drive. You can do this by clicking on 'File' and then 'Save'. You should see a pop-up with the following message:
 
-![09](images/colab/09.png)
+<img src="images/colab/09.png" width="100%">
 
 Click on 'SAVE A COPY IN DRIVE'. This will open up a new tab with the same file, only this time located in your Drive. If you want to continue working after saving, use the file in the new tab. Your notebook will be saved in a folder called Colab Notebooks in your Google Drive by default.
 
