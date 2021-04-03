@@ -6,89 +6,109 @@ permalink: /start_colab/
 
 ### 無償利用できるGoogleのGPUノートブック
 
-This is a quick guide to starting Practical Deep Learning for Coders using Google Colab. 
-Colab is a service that provides GPU-powered Notebooks for free. 
-It's based on, but slightly different to, regular Jupyter Notebooks, 
-so be sure to read the Colab docs to learn how it works.
+This is a quick guide to starting Practical Deep Learning for Coders using Google Colab. Colab is a service that provides GPU-powered Notebooks for free. It's based on, but slightly different to, regular Jupyter Notebooks, so be sure to read the Colab docs to learn how it works.
 
-NB: Colab is a free service that may not always be available, 
-and requires extra steps to ensure your work is saved. 
-Be sure to read the docs on the Colab web-site to ensure you understand the limitations of the system
+NB: Colab is a free service that may not always be available, and requires extra steps to ensure your work is saved. Be sure to read the docs on the Colab web-site to ensure you understand the limitations of the system.
+ 
+### 書籍の各章のオープン
 
-## Opening a chapter of the book
+下記のリンクから書籍の各章のノートブックをColabでオープンすることができる。
 
-You can open any chapter of the book in Colab by clicking on one of these links: Introduction to Jupyter | Chapter 1, Intro | Chapter 2, Production | Chapter 3, Ethics | Chapter 4, MNIST Basics | Chapter 5, Pet Breeds | Chapter 6, Multi-Category | Chapter 7, Sizing and TTA | Chapter 8, Collab | Chapter 9, Tabular | Chapter 10, NLP | Chapter 11, Mid-Level API | Chapter 12, NLP Deep-Dive | Chapter 13, Convolutions | Chapter 14, Resnet | Chapter 15, Arch Details | Chapter 16, Optimizers and Callbacks | Chapter 17, Foundations | Chapter 18, GradCAM | Chapter 19, Learner | Chapter 20, conclusion
+
+[1章 ディープラーニングへの旅路][chap01] |
+[2章　モデルから実運用へ][chap02] |
+[3章　データ倫理][chap03] |
+[4章　舞台裏：数字のクラス分類器][chap04] |
+[5章　画像クラス分類][chap05] |
+[6章　他のコンピュータビジョン問題][chap06] |
+[7章　SOTA モデルの訓練][chap07] |
+[8章　協調フィルタリングの詳細][chap08] |
+[9章　テーブル型データモデルの詳細][chap09] |
+[10章　自然言語処理の詳細：RNN][chap10] |
+[11章　fastai の中位API によるデータマングリング][chap11] |
+[12章　言語モデルを1 から作る][chap12] |
+[13章　畳み込みニューラルネットワーク][chap13] |
+[14章　ResNet][chap14] |
+[15章　アプリケーションアーキテクチャの詳細][chap15] |
+[16章　訓練のプロセス][chap16] |
+[17章　基礎からのニューラルネットワーク][chap17] |
+[18章　CAM を用いたCNN の解釈][chap18] |
+[19章　fastai Learner を1 から作る][chap19] |
+[20章　おわりに][chap20] |
+
+[app_jupyter]:https://colab.research.google.com/github/fastai/fastbook/blob/master/app_jupyter.ipynb
+[chap01]:https://colab.research.google.com/github/fastai/fastbook/blob/master/01_intro.ipynb
+[chap02]:https://colab.research.google.com/github/fastai/fastbook/blob/master/02_production.ipynb
+[chap03]:https://colab.research.google.com/github/fastai/fastbook/blob/master/03_ethics.ipynb
+[chap04]:https://colab.research.google.com/github/fastai/fastbook/blob/master/04_mnist_basics.ipynb
+[chap05]:https://colab.research.google.com/github/fastai/fastbook/blob/master/05_pet_breeds.ipynb
+[chap06]:https://colab.research.google.com/github/fastai/fastbook/blob/master/06_multicat.ipynb
+[chap07]:https://colab.research.google.com/github/fastai/fastbook/blob/master/07_sizing_and_tta.ipynb
+[chap08]:https://colab.research.google.com/github/fastai/fastbook/blob/master/08_collab.ipynb
+[chap09]:https://colab.research.google.com/github/fastai/fastbook/blob/master/09_tabular.ipynb
+[chap10]:https://colab.research.google.com/github/fastai/fastbook/blob/master/10_nlp.ipynb
+[chap11]:https://colab.research.google.com/github/fastai/fastbook/blob/master/11_midlevel_data.ipynb
+[chap12]:https://colab.research.google.com/github/fastai/fastbook/blob/master/12_nlp_dive.ipynb
+[chap13]:https://colab.research.google.com/github/fastai/fastbook/blob/master/13_convolutions.ipynb
+[chap14]:https://colab.research.google.com/github/fastai/fastbook/blob/master/14_resnet.ipynb
+[chap15]:https://colab.research.google.com/github/fastai/fastbook/blob/master/15_arch_details.ipynb
+[chap16]:https://colab.research.google.com/github/fastai/fastbook/blob/master/16_accel_sgd.ipynb
+[chap17]:https://colab.research.google.com/github/fastai/fastbook/blob/master/17_foundations.ipynb
+[chap18]:https://colab.research.google.com/github/fastai/fastbook/blob/master/18_CAM.ipynb
+[chap19]:https://colab.research.google.com/github/fastai/fastbook/blob/master/19_learner.ipynb
+[chap20]:https://colab.research.google.com/github/fastai/fastbook/blob/master/20_conclusion.ipynb
+
+
 
 Alternatively, head on to the Colab Welcome Page and click on 'Github'. In the 'Enter a GitHub URL or search by organization or user' line enter 'fastai/fastbook'. You will see all the courses notebooks listed there. Click on the one you are interested in using.
 
 NB: One section of chapter 2 uses Voila, which unfortunately is not supported by Colab. For that section, either skip it, or use a different platform such as Gradient (Colab is the only platform which doesn't support Voila).
 
-If you are returning to work and have previously completed the steps below, please go to the [returning to work](https://course.fast.ai/update_colab.html) section.
 
-**NB: This is a free service that may not always be available, and requires extra steps to ensure your work is saved. Be sure to read the docs on the Colab web-site to ensure you understand the limitations of the system.**
+### GPUの使用
 
-## Getting Set Up
+Before running anything, you need to tell Colab that you are interested in using a GPU. You can do this by clicking on the ‘Runtime’ tab and selecting ‘Change runtime type’. A pop-up window will open up with a drop-down menu.
 
-### Step 1: Accessing Colab
+![02](images/colab/02.png)
 
-1. First of all you should sign in to you Google account if you are not signed in by default. You must do this step before opening Colab, otherwise the notebooks will not work. You can sign in [here](https://accounts.google.com/signin/v2/identifier?hl=en-gb&flowName=GlifWebSignIn&flowEntry=ServiceLogin).
-
-1. Next, head on to the [Colab Welcome Page](https://colab.research.google.com/notebooks/welcome.ipynb#recent=true) and click on 'Github'. In the 'Enter a GitHub URL or search by organization or user' line enter 'fastai/course-v3'. You will see all the courses notebooks listed there. Click on the one you are interested in using.
-
-    <img alt="stop" src="/images/colab/01.png" width="640" class="screenshot">
-
-1. You should see your notebook displayed now. Before running anything, you need to tell Colab that you are interested in using a GPU. You can do this by clicking on the 'Runtime' tab and selecting 'Change runtime type'. A pop-up window will open up with a drop-down menu. Select 'GPU' from the menu and click 'Save'.
-
-    <img alt="stop" src="/images/colab/03.png" height="480" class="screenshot">
-
-    <img alt="stop" src="/images/colab/04.png" height="480" class="screenshot">
+メニューからGPUを選択し、'Save'をクリックする。
 
 
-### Step 2: Configuring your notebook instance
+![03](images/colab/03.png)
 
-1. Before you start using your notebook, you need to install the necessary packages. You can do this by creating a code cell, and running:
 
-    ```bash
-     !curl -s https://course19.fast.ai/setup/colab | bash
-    ```
+### Notebook setup
+The first cell contains the code necessary to set up fastai and other libraries you'll need. It looks like this:
 
-1. When you run the first cell, you will face a pop-up saying 'Warning: This notebook was not authored by Google'; you should click on 'Run Anyway' to get rid of the warning.
-
-    <img alt="stop" src="/images/colab/02.png" height="480" class="screenshot">
-
-### Step 3: Saving your notebook
-
-If you opened a notebook from Github, you will need to save your work to Google Drive. You can do this by clicking on 'File' and then 'Save'. You should see a pop-up with the following message:
-
-<img alt="create" src="/images/colab/09.png" height="480" class="screenshot">
-
-Click on 'SAVE A COPY IN DRIVE'. This will open up a new tab with the same file, only this time located in your Drive. If you want to continue working after saving,  use the file in the new tab. Your notebook will be saved in a folder called `Colab Notebooks` in your Google Drive by default.
-
-### Step 4: Saving your data files
-If you run a script which creates/ downloads files, the files will NOT persist after the allocated instance is shutdown. To save files, you need to permit your Colaboratory instance to read and write files to your Google Drive. Luckily, Colaboratory has a UI for permanently mounting your Google Drive.
-
-Look for the "Mount Drive" button on the Files sidebar:
-
-<img alt="Mount Drive" src="/images/colab/11.png" height="480" class="screenshot">
-
-After clicking the button you'll be asked to authorize Colaboratory to access your Google Drive. Once you do, your notebook will automatically mount that drive whenever the runtime is loaded, and the sidebar will show the contents of your drive. You can always choose to unmount the drive if you wish:
-
-<img alt="Unmount Drive" src="/images/colab/12.png" height="480" class="screenshot">
-
-Accessing data on your drive is then simply a matter of pointing at the right path. Add the following code snippet at the beginning of every notebook.
-```python 
-root_dir = "drive/My Drive/"
-base_dir = root_dir + 'fastai-v3/'
-```
-Now, you may access your Google Drive as a file sytem using standard python commands to both read and write files.
-Don't forget to add `base_dir` before root path(s) in all notebooks. For example, in `lesson2-download.ipynb` 5<sup>th</sup> cell, make the following changes:
 ```python
-path = Path(base_dir + 'data/bears')
-dest = path/folder
-dest.mkdir(parents=True, exist_ok=True)
+!pip install -Uqq fastbook
+import fastbook
+fastbook.setup_book()
 ```
 
-### Migrating from using "drive.mount":
-* The previous method of mounting google drive, using `drive.mount` is still avaiable.
-* If you wish to migrate a notebook from using `python drive.mount` to the UI, you'll need to change `root_dir` from `/content/gdrive/My Drive/` to `drive/My Drive/`.
- 
+Click the "run" triangle on the left of that cell, or press Ctrl-Enter, to execute the cell.
+
+When you run the first cell, you may face a pop-up saying 'Warning: This notebook was not authored by Google'; you should click on 'Run Anyway' to get rid of the warning.
+
+![04](images/colab/04.png)
+
+
+### Using Google Drive
+
+Colab lets you save your work to Google Drive, so when you run the cell, it will ask you to login to Google Drive. You'll need a Google Account to do this.
+
+After you've logged in, you can execute the next cell which imports everything you need from the library you just installed. It looks like this:
+
+```python
+from fastbook import *
+```
+
+Your Google Drive will be available in a variable called gdrive, which will point to Path('/content/gdrive/My Drive'). When saving files and models during the lessons, you should use directories in this path.
+
+After opening a notebook from Github, you will need to save your work to Google Drive. You can do this by clicking on 'File' and then 'Save'. You should see a pop-up with the following message:
+
+![09](images/colab/09.png)
+
+Click on 'SAVE A COPY IN DRIVE'. This will open up a new tab with the same file, only this time located in your Drive. If you want to continue working after saving, use the file in the new tab. Your notebook will be saved in a folder called Colab Notebooks in your Google Drive by default.
+
+For more advanced tips on using Colab effectively, have a look at this blog post.
