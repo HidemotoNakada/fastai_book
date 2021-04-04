@@ -79,12 +79,12 @@ Colabのウェブサイトを呼んでこのシステムの制約をよく理解
 「Change runtime type」を選択する。
 するとポップアップウィンドウが開く。その中に次のようなドロップダウンメニューがあるはずだ。
 
-<img src="images/colab/02.png" width="80%">
+<img src="{{ site.baseurl }}/images/colab/02.png" width="80%">
 
 このメニューからGPUを選択し、'Save'をクリックする。
 
 
-<img src="images/colab/03.png" width="30%">
+<img src="{{ site.baseurl }}/images/colab/03.png" width="30%">
 
 ### ノートブックの設定
 最初のセルには、fastaiやその他の必要なライブラリをセットアップするためのコードが書かれている。次のようなコードだ。
@@ -100,7 +100,7 @@ fastbook.setup_book()
 最初のセルを実行すると、次のように「Warning: This notebook was not authored by Google'」
 という警告ウィンドウがポップアップする事がある。この場合は「'Run Anyway'」を選択すればよい。
 
-<img src="images/colab/04.png" width="50%">
+<img src="{{ site.baseurl }}/images/colab/04.png" width="50%">
 
 
 ### Google Driveの利用
@@ -120,7 +120,7 @@ Githubからノートを開いた場合には、Google Driveにセーブする�
 これには、`'File'`から`'Save'`すればよい。
 次のようなポップアップが表示されるはずだ。
 
-<img src="images/colab/09.png" width="100%">
+<img src="{{ site.baseurl }}/images/colab/09.png" width="100%">
 
 ここで、`'SAVE A COPY IN DRIVE'`をクリックする。
 こうすると別のタブでGoogle Driveに置かれたノートブックが開く。
