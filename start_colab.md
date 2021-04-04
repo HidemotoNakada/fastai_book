@@ -6,10 +6,14 @@ permalink: /start_colab/
 
 ### 無償利用できるGoogleのGPUノートブック
 
-This is a quick guide to starting Practical Deep Learning for Coders using Google Colab. Colab is a service that provides GPU-powered Notebooks for free. It's based on, but slightly different to, regular Jupyter Notebooks, so be sure to read the Colab docs to learn how it works.
+ここでは、本書のサンプルコードをGoogle Colabで実行する方法を簡単に説明する。
+ColabはGPUが無償で使えるNotebookサービスだ。
+Colabのノートブックは通常のJupyterをベースにしているが、若干異なる点もある。
+Colabのドキュメントを読んで動作を理解しておこう。
 
-NB: Colab is a free service that may not always be available, and requires extra steps to ensure your work is saved. Be sure to read the docs on the Colab web-site to ensure you understand the limitations of the system.
- 
+注意: Colabは無償サービスだが、いつも使えるとは限らないし、実行結果を保存するにはひと手間かかる。
+Colabのウェブサイトを呼んでこのシステムの制約をよく理解しておこう。
+  
 ### 書籍の各章のオープン
 
 下記のリンクから書籍の各章のノートブックをColabでオープンすることができる。
@@ -59,25 +63,31 @@ NB: Colab is a free service that may not always be available, and requires extra
 [chap20]:https://colab.research.google.com/github/fastai/fastbook/blob/master/20_conclusion.ipynb
 
 
+別の方法もある。ColabのWelcomeページに行き、'Github'をクリックする。
+'Enter a GitHub URL or search by organization or user'と聞かれたら、
+'fastai/fastbook'と入力する。すると、このコースのノートブックが列挙されるので、
+使いたいものを選択すればいい。
 
-Alternatively, head on to the Colab Welcome Page and click on 'Github'. In the 'Enter a GitHub URL or search by organization or user' line enter 'fastai/fastbook'. You will see all the courses notebooks listed there. Click on the one you are interested in using.
-
-NB: One section of chapter 2 uses Voila, which unfortunately is not supported by Colab. For that section, either skip it, or use a different platform such as Gradient (Colab is the only platform which doesn't support Voila).
+注意: 2章の節の一つではVoilaを利用している。Colabでは残念ながらVoilaは動作しない。
+この節に関しては、スキップするか、Gradientなど他のプラットフォームを使って欲しい
+(Colab以外なら動作する)。
 
 
 ### GPUの使用
 
-Before running anything, you need to tell Colab that you are interested in using a GPU. You can do this by clicking on the ‘Runtime’ tab and selecting ‘Change runtime type’. A pop-up window will open up with a drop-down menu.
+何よりも先に、Colabに対して、GPUを使いたいと伝える必要がある。これには「Runtime」タブをクリックして、
+「Change runtime type」を選択する。
+するとポップアップウィンドウが開く。その中に次のようなドロップダウンメニューがあるはずだ。
 
 <img src="images/colab/02.png" width="80%">
 
-メニューからGPUを選択し、'Save'をクリックする。
+このメニューからGPUを選択し、'Save'をクリックする。
 
 
 <img src="images/colab/03.png" width="30%">
 
-### Notebook setup
-The first cell contains the code necessary to set up fastai and other libraries you'll need. It looks like this:
+### ノートブックの設定
+最初のセルには、fastaiやその他の必要なライブラリをセットアップするためのコードが書かれている。次のようなコードだ。
 
 ```python
 !pip install -Uqq fastbook
@@ -85,30 +95,37 @@ import fastbook
 fastbook.setup_book()
 ```
 
-Click the "run" triangle on the left of that cell, or press Ctrl-Enter, to execute the cell.
+このセルの左側にある三角形の実行ボタンをクリックしてこのセルを実行しよう。`Ctrl-Enter`でも実行できる。
 
-When you run the first cell, you may face a pop-up saying 'Warning: This notebook was not authored by Google'; you should click on 'Run Anyway' to get rid of the warning.
-
+最初のセルを実行すると、次のように「Warning: This notebook was not authored by Google'」
+という警告ウィンドウがポップアップする事がある。この場合は「'Run Anyway'」を選択すればよい。
 
 <img src="images/colab/04.png" width="50%">
 
 
-### Using Google Drive
+### Google Driveの利用
 
-Colab lets you save your work to Google Drive, so when you run the cell, it will ask you to login to Google Drive. You'll need a Google Account to do this.
+ColabはノートブックをGoogle Driveにセーブする。このため、セルを実行するとGoogle Driveにログインするように求めてくる。これにはGoogleアカウントが必要になる。
 
-After you've logged in, you can execute the next cell which imports everything you need from the library you just installed. It looks like this:
+ログインをしたら、次のセルを実行する。このセルでは、次のようにしてインストールしたばかりの必要なライブラリをすべてインポートする。
 
 ```python
 from fastbook import *
 ```
 
-Your Google Drive will be available in a variable called gdrive, which will point to Path('/content/gdrive/My Drive'). When saving files and models during the lessons, you should use directories in this path.
+Google Driveへのパスは、`gdrive`という変数名で与えられる。この変数は`Path('/content/gdrive/My Drive')`を指している。
+ファイルやモデルをセーブする際には、このパスの下のディレクトリを使う必要がある。
 
-After opening a notebook from Github, you will need to save your work to Google Drive. You can do this by clicking on 'File' and then 'Save'. You should see a pop-up with the following message:
+Githubからノートを開いた場合には、Google Driveにセーブする必要がある。
+これには、`'File'`から`'Save'`すればよい。
+次のようなポップアップが表示されるはずだ。
 
 <img src="images/colab/09.png" width="100%">
 
-Click on 'SAVE A COPY IN DRIVE'. This will open up a new tab with the same file, only this time located in your Drive. If you want to continue working after saving, use the file in the new tab. Your notebook will be saved in a folder called Colab Notebooks in your Google Drive by default.
+ここで、`'SAVE A COPY IN DRIVE'`をクリックする。
+こうすると別のタブでGoogle Driveに置かれたノートブックが開く。
+セーブしたあとも作業を続けるなら新しいタブで開かれた方を使おう。
+ノートブックはデフォルトでは、Google Driveの`Colab Notebooks`フォルダにセーブされる。
 
-For more advanced tips on using Colab effectively, have a look at this blog post.
+より高度で効率的なColabの使い方については、
+この[ブログ記事](https://medium.com/@robertbracco1/configuring-google-colab-like-a-pro-d61c253f7573)を参照してほしい。
