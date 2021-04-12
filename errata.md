@@ -4,7 +4,6 @@ title: エラー
 permalink: /eratta/
 ---
 
-# エラー
 
 お気づきの点がありましたら、Twitter [@HidemotoNakada](https://twitter.com/hidemotoNakada)にメンションしてつぶやいていただけると幸いです。
 
