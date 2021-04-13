@@ -1,7 +1,7 @@
 ---
 layout: page
-title: エラー
-permalink: /eratta/
+title: 正誤表
+permalink: /errata/
 ---
 
 
