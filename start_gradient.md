@@ -3,130 +3,136 @@ layout: page
 title: Paperspace Gradientの使い方
 permalink: /start_gradient/
 ---
-# Paperspace Gradient
 
 ![image](images/gradient/fastaiv4-gradient-new.jpg)
 
-This is a quick guide to getting started with Deep Learning for Coders on Paperspace Gradient. With [Gradient](https://gradient.paperspace.com/), you get access to a Jupyter Notebook instance backed by a free GPU in less than 60 seconds, without any complicated installs or configuration. [Gradient](https://gradient.paperspace.com/) is built on top of [Paperspace](https://www.paperspace.com/), a GPU-accelerated cloud platform.
+本ページでは、「PyTorchとfastaiではじめるディープラーニング」のサンプルコードをPaperspace Gradientで動作させる方法を簡単に説明する。[Gradient](https://gradient.paperspace.com/)を用いると、複雑なインストールや設定を行わなくても、GPU付きのJupyter Notebookを60秒以内で用意することができる。[Gradient](https://gradient.paperspace.com/)はGPUクラウドである[Paperspace](https://www.paperspace.com/)
+の上に構築されている。
 
-## Pricing
 
-**Paperspace recently introduced a [Free Tier of free GPU and CPU instances](https://docs.paperspace.com/gradient/instances/free-instances).** To use them, choose *Free-GPU* or *Free-P5000* (recommended) in step 2.6 Create Notebook.
+## 価格
 
-Note: Additional capacity and more powerful GPUs are available with paid instance types.  Paid instances are billed while they're running (per second!) and the rate is dependent on the [Instance Type](https://gradient.paperspace.com/instances) selected. Notebooks must be stopped to end billing.  Consider using new [Gradient "preemptible" instances](https://docs.paperspace.com/gradient/instances/preemptible-instances) which can save you money when using paid instances.
+**Paperspaceは先ごろ[GPUインスタンスとCPUインスタンスの無料ティア](https://docs.paperspace.com/gradient/instances/free-instances)を導入した。** これを使うには、ステップ2.6でノートブックを作成する際に、*Free-GPU*もしくは*Free-P5000* (こちらが推奨)を用いるとよい。 
 
-## Step 1: Create an account
+注意: 課金インスタンスでは、より容量が大きく高性能なGPUを使う事ができる。課金インスタンスは、実行時間(秒単位！)で課金される。単価は[インスタンスタイプ](https://gradient.paperspace.com/instances)に依存する。[Gradientの"preemptible"(割り込まれる可能性がある)インスタンス](https://docs.paperspace.com/gradient/instances/preemptible-instances)を使うと安く済むので、検討してほしい。
+ 
+## ステップ 1: アカウントの作成
 
-To get started, create an account [here](https://console.paperspace.com/signup?gradient=true) and confirm your account by clicking the verification link in your inbox.
+まずはじめに、アカウントを[ここ](https://console.paperspace.com/signup?gradient=true)で作り、送られてくるメールに書かれている確認リンクをクリックする。
+ 
+## ステップ 2: Notebookの作成
 
-## Step 2: Create Notebook
+1. ログインしてGradient > Notebooks と進む。
 
-1. Login and select Gradient > Notebooks.
-
-2. Select the _Paperspace + Fast.AI_ base container.
+2. _Paperspace + Fast.AI_ をベースコンテナとして選択。
 
 ![image](images/gradient/choose-container.jpg)
 
-1. Select the type of machine you want to run on.
+1. 実行したいインスタンスタイプを選択。
 
-Important note: remember that you can change the instance type _at any time._ This means you can start out running on an inexpensive or free instance, and then, whenever you want, switch to a much more powerful instance to execute code as efficiently as possible. Instance type is independent of your notebook. When you return to work, the instance type should self-select to whatever type you last used. But it's a good idea always to check! This will prevent billing and performance surprises.
+重要:インスタンスタイプは _いつでも_ 変更できる。つまり、安価もしくは無償のインスタンスで初めて、必要になったら効率の良い協力なインスタンスに切り替えることができるということだ。インスタンスタイプとノートブックは紐付かない。ノートブックを使おうとすると、最後に使ったのと同じインスタンスが自動的に選択されるが、インスタンスタイプをいつも確認するようにしよう。そうしておけば、間違えて高価なインスタンスを使ってしまい、請求書を見てびっくり、というようなことが避けられる。
 
 ![image](images/gradient/choose-instance.jpg)
 
-1. Name your Notebook (optional)
+1. ノートブックに名前を設定する (しなくてもいい)
 
-2. Enter your payment details (if using a paid instance type). _Even if you have a promo or referral code, all paid instances require a valid credit card on file._
+2. 支払い方法を入力する(課金インスタンスを使う場合)。_プロモーションコードや紹介コードを持っていたとしても、課金インスタンスを使うには有効なクレジットカードを登録する必要がある_。
 
-3. Click Create Notebook
+3. Create Notebook をクリックする。
 
 ![create](images/gradient/create.png)
 
-Your Notebook will go from Pending to Running, and will be ready to use 🌟.
+これでノートブックの状態がPendingからRunningになり、使える状態になるはずだ🌟.
 
-Note: When you are using paid instances, clicking Create Notebook will start your Notebook and your billing session will begin. To stop billing, you must stop your Notebook.
+注意: 課金インスタンスの場合、「Create Notebook」をクリックしてノートブックを起動するだけで課金が発生する。課金を停止するためには、ノートブックを停止する必要がある。
 
-## Step 3 : Update the fastai library
+## ステップ 3 : fastaiライブラリの更新
 
-Before you start working you will need to update the fastai library and lesson notebooks. To do this you will have to access the terminal. You can do this by clicking in 'New', 'Terminal'.
+作業を始める前に、fastaiライブラリとレッスンノートブックをアップデートする必要がある。これにはターミナルを用いる。「New」->
+「Terminal」とクリックする。
 
 ![terminal](images/gradient/terminal.jpg)
 
-Once you click on 'Terminal' a new window should open with a terminal. Type:
+「Terminal」をクリックすると、新しいウィンドウが開いてターミナルが表示される。ここで下のようにタイプする。
 
 
     pip install fastai fastcore --upgrade
 
-
-then
+つづいて、次のようにタイプする。
 
     git pull
 
-Now you should close the terminal window.
+これで完了なので、ターミナルウィンドウを閉じる。
 
-## Step 4: Start learning Fast.ai!
 
-You should now have a running fast.ai notebook. It might take a few seconds to provision, but once it's running you just have to click "Open" to access your Jupyter notebook.
+## ステップ 4: fast.ai 学習の開始
+
+これで、fast.ai ノートブックが実行できる状態になった。プロビジョニングに数秒かかるかもしれないが、実行が開始されればあとは「Open」をクリックするだけでJupyterノートブックが利用できる。
 
 ![ready](images/gradient/ready.jpg)
 
-Next from your jupyter notebook, click on 'fastbook' and you should look at something like this:
+Jupyterノートブックから、「fastbook」をクリックすると次のように表示されるはずだ。
 
 ![nb tuto](images/gradient/notebook-view-new.jpg)
 
-Go back to the [first page](https://course.fast.ai/index.html) to see how to use this jupyter notebook and run the jupyter notebook tutorial. Come back here once you're finished and _don't forget to stop your instance_ with the next step
+[最初のページ](https://course.fast.ai/index.html)にもどって、Jupyterノートブックの使い方を復習して、Jupyterノートブックチュートリアルを実行してみよう。チュートリアルを終えたらここにもどって、次のステップである_インスタンスの停止を忘れないように_ しよう。
+ 
+## ステップ 5: Notebookの停止
 
-## Step 5: Stopping your Notebook
-
-Just click stop on the notebook page or notebook list view. This will end the session.
+ノートブックのページもしくはノートブックリストの「stop」をクリックするだけでいい。これでセッションが停止する。
 
 ![stop1](images/gradient/stop-notebook1.jpg)
 ![stop2](images/gradient/stop-notebook-list.jpg)
 
-NOTE: When using paid instances, you _will_ be charged for the time that your notebook is running. You must stop the notebook to stop incurring charges.
+注意: 課金インスタンスでは、ノートブックが実行している時間に応じて課金が発生する。課金を避けるためにはノートブックを停止する必要がある。
 
 * * *
 
-## Additional considerations:
+## 高度な使い方
 
-### Managing Data
+### データの管理
 
 The `/storage` folder is your [Persistent Storage](https://docs.paperspace.com/gradient/data/storage#persistent-storage). Files placed here are available across all Notebooks, Jobs, and Linux VMs (currently free of charge). This repository is perfect for storing datasets, models etc. Note: Persistent Storage is region specific (you'll see the storage region options when creating Notebooks and Jobs).
 
-### Sharing your notebook
+### ノートブックの共有
 
 Gradient Notebooks can be shared publicly so others can view and/or fork your work.  Just click the "share" button to generate a unique URL.
 
 ![share](images/gradient/share.jpg)
 
-### Viewing a stopped notebook
+### 停止したノートブックの参照
 
-Gradient Notebooks can be viewed without running them. Just click open to view a static version of the notebook.
+Gradientのノートブックは、実行しなくても見ることができる。
+ノートブックのstaticバージョンをクリックして開けばいい。
 
-### Where to get help
+### 不明なことがあった場合
 
-Questions or issues related to course content, we recommend posting in the [fast.ai forum](http://forums.fast.ai/). For Paperspace-specific support, check out the rest of the [Gradient Docs](https://docs.paperspace.com/gradient/) or submit a support ticket with [this form](https://support.paperspace.com/hc/en-us/requests/new).
+コースの内容に関して質問や問題がある場合には、[fast.ai forum](http://forums.fast.ai/)にポストしてほしい。Paperspaceに関するサポートについては、[Gradientのドキュメント](https://docs.paperspace.com/gradient/)を参照するか、 [このフォーム](https://support.paperspace.com/hc/en-us/requests/new)からサポートチケットを入力しよう。
 
-## Developing fastai on Gradient
+## Gradient上でのfastaiの開発
 
-If you would like to follow the [Developer guide for fastai](http://docs.fast.ai/dev-setup) and help develop the fastai library from your Gradient instance,
-read this section first for some Gradient-specific recommendations.
+[Developer guide for fastai](http://docs.fast.ai/dev-setup)に従って
+Gradientインスタンス上でfastaiライブラリの開発に参加したいと考えているのなら、
+さきに本節を読んでGradient固有の推奨設定を確認してほしい。
 
-> The Gradient terminal is easier to use if you first type `bash` after opening the terminal window. This will let you use the up/down arrows to explore command history, as well as use tab for text completion. To paste text into the prompt, use `ctrl-shift-v` in the terminal window. 
 
-### Things to keep in mind before working through the section [Setting up access and `gh`](http://docs.fast.ai/dev-setup#Setting-up-access-and-gh):
+> Gradientターミナルを使う際には、ターミナルウィンドウを開いたらすぐに`bash`とタイプすると良い。こうすると、コマンドヒストリーを上下のカーソルキーで操作できるようになるし、テキストの補完も可能になる。テキストをプロンプトにペーストするには、ターミナルウィンドウで`ctrl-shift-v`とする。
 
-Start with the _Paperspace + Fast.AI_ base container instance that you've already created.
+### [Setting up access and `gh`](http://docs.fast.ai/dev-setup#Setting-up-access-and-gh)を行う前に知っておくべきこと
 
-Your gradient instance has miniconda, not anaconda, so follow the miniconda-specific instructions in the developer guide. For example, the first command of the developer guide should be `conda install -y -c fastai -c pytorch fastai gh nbdev`
+すでに作成した_Paperspace + Fast.AI_ベースコンテナから始めるとする。
 
-If you are working through the Github SSH keygen tutorials and the `ssh-keygen` command doesn't work, you first need to install openssh-client on your Gradient instance. Type the commands 
+この場合Gradientのインスタンスはanacondaではなくminicondaを使っているので、開発ガイドのminiconda用のインストラクションに従うようにしよう。例えば、最初のコマンドは`conda install -y -c fastai -c pytorch fastai gh nbdev`だ。
 
+Github　SSH keygenチュートリアルを行う際に`ssh-keygen`が動かない場合がある。この場合には、まずGradientインスタンスにopenssh-clientをインストールする必要がある。これには次のようにタイプする。
+ 
     apt-get update
     apt-get upgrade
     apt-get install openssh-client
 
-and then continue with the GitHub tutorial.
+これで、GitHubのチュートリアルが動作するはずだ。
 
-### Things to keep in mind before working through the section [Set up `fastcore`](http://docs.fast.ai/dev-setup#Set-up-fastcore):
+### [Set up `fastcore`](http://docs.fast.ai/dev-setup#Set-up-fastcore)を行う前に知っておくべきこと
 
-Run these `clone` commands from the `/notebooks` directory, so the repos end up here next to the other ones.
+`clone`コマンドは`/notebooks`ディレクトリで実行する。そうすれば他のレポジトリの隣に並ぶ。
+ 
