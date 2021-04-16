@@ -91,12 +91,13 @@ Jupyterノートブックから、「fastbook」をクリックすると次の�
 ## 高度な使い方
 
 ### データの管理
+`/storage`フォルダは、ユーザの[永続ストレージ](https://docs.paperspace.com/gradient/data/storage#persistent-storage)となっている。このフォルダに置かれたファイルはすべてのノートブック、ジョブ、Linux VM(現在のところ無料)からアクセスできる。このレポジトリは、データセットやモデルを置くのに適している。
+注意: Persistent Storageは特定のリージョンに作られる(ノートブックやジョブを生成する際に、ストレージのリージョンを指定する事ができる)。
 
-The `/storage` folder is your [Persistent Storage](https://docs.paperspace.com/gradient/data/storage#persistent-storage). Files placed here are available across all Notebooks, Jobs, and Linux VMs (currently free of charge). This repository is perfect for storing datasets, models etc. Note: Persistent Storage is region specific (you'll see the storage region options when creating Notebooks and Jobs).
 
 ### ノートブックの共有
 
-Gradient Notebooks can be shared publicly so others can view and/or fork your work.  Just click the "share" button to generate a unique URL.
+Gradientノートブックを公開すると、第三者が見てフォークできるようになる。"share"ボタンをクリックしてユニークなURLを生成する。
 
 ![share](images/gradient/share.jpg)
 
