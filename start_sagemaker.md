@@ -22,7 +22,7 @@ SageMakerタイプのリミット値を選択し、利用したいリージョ�
 新しいリミット値として1を選び、記述を追加して右下のボタンからサブミットする。
 インスタンスを停止しないといつまでも課金されることになる。
 
- <img alt="limitincrease" src="images/aws/increase_limit_sagemaker.png" class="screenshot">
+ <img alt="limitincrease" src="{{ site.baseurl }}/images/aws/increase_limit_sagemaker.png" class="screenshot">
 
 ## 設定
 
@@ -32,33 +32,33 @@ SageMakerタイプのリミット値を選択し、利用したいリージョ�
 
     リージョン | 名前 | 起動リンク
     --- | --- | ---
-    US West (Oregon) Region | us-west-2 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
-    US East (N. Virginia) Region | us-east-1 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
-    US East (Ohio) Region | us-east-2 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
-    US West (N. California) Region | us-west-1 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://us-west-1.console.aws.amazon.com/cloudformation/home?region=us-west-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)    
-    Asia Pacific (Tokyo) Region | ap-northeast-1 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://ap-northeast-1.console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
-    Asia Pacific (Seoul) Region | ap-northeast-2 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
-    Asia Pacific (Sydney) Region | ap-southeast-2 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://ap-southeast-2.console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
-    Asia Pacific (Mumbai) Region | ap-south-1 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://ap-south-1.console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack) 
-    Asia Pacific (Singapore) Region | ap-southeast-1 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)           
-    Canada (central) Region | ca-central-1 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://ca-central-1.console.aws.amazon.com/cloudformation/home?region=ca-central-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)       
-    EU (Ireland) Region | eu-west-1 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://eu-west-1.console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
-    EU (Frankfurt) Region | eu-central-1 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
-    EU (London) Region | eu-west-2 | [![CloudFormation](images/aws/cfn-launch-stack.png)](https://eu-west-2.console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)    
+    US West (Oregon) Region | us-west-2 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
+    US East (N. Virginia) Region | us-east-1 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
+    US East (Ohio) Region | us-east-2 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
+    US West (N. California) Region | us-west-1 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://us-west-1.console.aws.amazon.com/cloudformation/home?region=us-west-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)    
+    Asia Pacific (Tokyo) Region | ap-northeast-1 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://ap-northeast-1.console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
+    Asia Pacific (Seoul) Region | ap-northeast-2 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
+    Asia Pacific (Sydney) Region | ap-southeast-2 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://ap-southeast-2.console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
+    Asia Pacific (Mumbai) Region | ap-south-1 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://ap-south-1.console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack) 
+    Asia Pacific (Singapore) Region | ap-southeast-1 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)           
+    Canada (central) Region | ca-central-1 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://ca-central-1.console.aws.amazon.com/cloudformation/home?region=ca-central-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)       
+    EU (Ireland) Region | eu-west-1 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://eu-west-1.console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
+    EU (Frankfurt) Region | eu-central-1 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://eu-central-1.console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)
+    EU (London) Region | eu-west-2 | [![CloudFormation]({{ site.baseurl }}/images/aws/cfn-launch-stack.png)](https://eu-west-2.console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/create/review?filter=active&templateURL=https://fastai-cfn.s3.amazonaws.com/sagemaker-cfn-course-v4.yml&stackName=FastaiSageMakerStack)    
 
 1. すると下図のようにAWS CloudFormationのWebコンソールがオープンし、AWS資源を構築するためのテンプレートが表示される。入力パラメータをチェックし、必要に応じて変更する。**I acknowledge that AWS CloudFormation might create IAM resources.** 
 と書かれたチェックボックスをチェックし、**Create** ボタンをクリックしてスタックを作成する。
 
-    <img alt="create stack" src="images/sagemaker/create_stack.png" class="screenshot">
+    <img alt="create stack" src="{{ site.baseurl }}/images/sagemaker/create_stack.png" class="screenshot">
 
 1. CloudFormationのページが開く。スタックのステイタスは`CREATE_IN_PROGRESS`となっているはずだ。ステイタスが**CREATE_COMPLETE**になるまで待つ。AWSのWebコンソールの左上隅にあるServicesメニューから"sage"と入力すると、下図のように`Amazon SageMaker`のリンクが出てくる。これをクリックしてSageMakerのWebコンソールを開く。
 
 
-   <img alt="sage" src="images/sagemaker/01.png" class="screenshot">
+   <img alt="sage" src="{{ site.baseurl }}/images/sagemaker/01.png" class="screenshot">
 
 1. 左側のナビゲーションバーから、「Notebook instances」を選択する。このページから、ノートブックのインスタンスを作成し管理しアクセスする。下図を見ると、**fastai-v4** という名前のノートブックインスタンスのステイタスが、`InService`となっていることがわかる。
 
-   <img alt="openjupyter" src="images/sagemaker/open_juypter.png" class="screenshot">
+   <img alt="openjupyter" src="{{ site.baseurl }}/images/sagemaker/open_juypter.png" class="screenshot">
    
    最初にノートブックインスタンスを作成する際には、fastaiライブラリと依存するライブラリがインストールされるので、10分程度かかる。
       
@@ -66,11 +66,11 @@ SageMakerタイプのリミット値を選択し、利用したいリージョ�
 
 `Open Jupyter`リンクをクリックすると、fastaiコースのノートブックがすでにインストールされたJupyterノートブックのWebインターフェイスへとリダイレクトされる。
 
-<img alt="coursenotebooks" src="images/sagemaker/course_notebooks.png" class="screenshot">
+<img alt="coursenotebooks" src="{{ site.baseurl }}/images/sagemaker/course_notebooks.png" class="screenshot">
 
 ノートブックを最初にオープンする際には、Jupyterに用いるカーネルを選択するように求められる。下図に示すように`fastai`という名前のカーネルがあるので、ドロップダウンメニューからそれを選んで、`Set Kernel`のボタンをクリックする。
 
-<img alt="selectfastaikernel" src="images/sagemaker/selectkernel.png" class="screenshot">
+<img alt="selectfastaikernel" src="{{ site.baseurl }}/images/sagemaker/selectkernel.png" class="screenshot">
 
 `fastai`というカーネルが現れない場合には、依存ライブラリやfastaiライブラリのインストールがまだ終わっていない。完了までには10分かかるので、それを待ってからページをリフレッシュして、`fastai`カーネルを選択しよう。
 
